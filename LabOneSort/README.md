@@ -96,4 +96,4 @@
 
 | Язык | Решение |
 |------|---------|
-| Python | [PointsSort.py](PointsSort.py) |
+| C++ | [PointsSort.cpp](PointsSort.cpp) |
