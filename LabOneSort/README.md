@@ -53,4 +53,4 @@
 
 | Язык | Решение |
 |------|---------|
-| C++  | [Task3.cpp](Task3.cpp) |
+| C++  | [BubbleSort(Two).cpp](BubbleSortTwo.cpp) |
