@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+void BubbleSort(vector<int>& A) 
+{
+	int n = A.size();
+	
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = 0; j < n - 1; j++)
+		{
+			if (A[j] > A[j + 1])
+			{
+				swap(A[j], A[j + 1]);
+			}
+		}
+	}
+}
+
+int main()
+{
+	vector<int>A;
+	int x;
+
+	while (cin >> x)
+	{
+		A.push_back(x);
+	}
+}
