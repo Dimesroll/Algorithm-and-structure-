@@ -3,39 +3,40 @@
 
 using namespace std;
 
-void SelectionSort(vector<int>&A) 
+void InsertionSort(vector<int>& A)
 {
 	int n = A.size();
 
-	for (int i = 0; i < n; i++) 
-	{
-		int max = i;
+    for (int i = 1; i < n; i++)
+    {
+        int key = A[i];
+        int j = i - 1;
 
-		for (int j = i; j < n; j++)
-		{
-			if (A[j] > A[max]) 
-			{
-				max = j;
-			}
-		}
-		swap(A[i], A[max]);
-	}
+        while (j >= 0 && A[j] > key)
+        {
+            A[j + 1] = A[j];
+            j--;
+        }
+        A[j + 1] = key;
+    }
 }
 
 int main()
 {
-	vector<int>A;
-	int x;
+    vector<int>A;
+    int x;
 
-	while (cin >> x)
-	{
-		A.push_back(x);
-	}
+    while (cin >> x)
+    {
+        A.push_back(x);
+    }
 
-	SelectionSort(A);
-	
+    InsertionSort(A);
+
 	for (int i = 0; i < A.size(); i++)
 	{
 		cout << A[i] << " ";
 	}
 }
+
+
